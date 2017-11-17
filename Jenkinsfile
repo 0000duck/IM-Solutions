@@ -16,9 +16,9 @@ pipeline {
         sh "xbuild InterlancedMinds-Solutions.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
       }
     }
-    stage('Zipping It All Up') {
+    stage('Archive') {
       steps {
-        sh 'zip -r ${env.BUILD_NUMBER}.zip Build'
+        archiveArtifacts(artifacts: 'Build.zip', excludes: '*.pdb')
       }
     }
     stage('Cleanup') {
