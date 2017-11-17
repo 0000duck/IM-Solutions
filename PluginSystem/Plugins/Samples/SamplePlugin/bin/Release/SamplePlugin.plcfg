@@ -1,0 +1,23 @@
+﻿{
+	"Plugin": {
+		"Name": "Sample Plugin",
+		"Path": "Sample",
+		"Version": "V0.0.0.0",
+		"Version_Controll": "",
+		"File": "SamplePlugin.dll",
+		"Resource": [
+			{
+				"Name": "PluginLib.dll",
+				"Version": "NOT USED"
+			},
+			{
+				"Name": "PluginLib.pdb",
+				"Version": "NOT USED"
+			},
+			{
+				"Name": "SamplePlugin.pdb",
+				"Version": "NOT USED"
+			}
+		]
+	}
+}

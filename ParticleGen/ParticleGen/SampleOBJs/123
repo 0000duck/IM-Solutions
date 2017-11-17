@@ -1,0 +1,124 @@
+#Last Edited: @Mitteleuropäische Zeit, 10.31.2017 00:37
+#
+#
+#Points
+# 9. 10. 11
+execute @e[tag=particlestand] ~ ~ ~ particle note ~9 ~10 ~11 0.1 0.1 0.1 0.1 1 .1
+# 9. 12. 11
+execute @e[tag=particlestand] ~ ~ ~ particle note ~9 ~12 ~11 0.1 0.1 0.1 0.1 1 .1
+# 9. 10. 9
+execute @e[tag=particlestand] ~ ~ ~ particle note ~9 ~10 ~9 0.1 0.1 0.1 0.1 1 .1
+# 9. 12. 9
+execute @e[tag=particlestand] ~ ~ ~ particle note ~9 ~12 ~9 0.1 0.1 0.1 0.1 1 .1
+# 11. 10. 11
+execute @e[tag=particlestand] ~ ~ ~ particle note ~11 ~10 ~11 0.1 0.1 0.1 0.1 1 .1
+# 11. 12. 11
+execute @e[tag=particlestand] ~ ~ ~ particle note ~11 ~12 ~11 0.1 0.1 0.1 0.1 1 .1
+# 11. 10. 9
+execute @e[tag=particlestand] ~ ~ ~ particle note ~11 ~10 ~9 0.1 0.1 0.1 0.1 1 .1
+# 11. 12. 9
+execute @e[tag=particlestand] ~ ~ ~ particle note ~11 ~12 ~9 0.1 0.1 0.1 0.1 1 .1
+#Kill Lines
+execute @e[tag=SSSdraw0] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw0]
+execute @e[tag=SSSdraw1] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw1]
+execute @e[tag=SSSdraw2] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw2]
+execute @e[tag=SSSdraw3] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw3]
+execute @e[tag=SSSdraw4] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw4]
+execute @e[tag=SSSdraw5] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw5]
+execute @e[tag=SSSdraw6] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw6]
+execute @e[tag=SSSdraw7] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw7]
+execute @e[tag=SSSdraw8] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw8]
+execute @e[tag=SSSdraw9] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw9]
+execute @e[tag=SSSdraw10] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw10]
+execute @e[tag=SSSdraw11] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw11]
+execute @e[tag=SSSdraw12] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw12]
+execute @e[tag=SSSdraw13] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw13]
+execute @e[tag=SSSdraw14] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw14]
+execute @e[tag=SSSdraw15] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw15]
+execute @e[tag=SSSdraw16] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw16]
+execute @e[tag=SSSdraw17] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw17]
+execute @e[tag=SSSdraw18] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw18]
+execute @e[tag=SSSdraw19] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw19]
+execute @e[tag=SSSdraw20] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw20]
+execute @e[tag=SSSdraw21] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw21]
+execute @e[tag=SSSdraw22] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw22]
+execute @e[tag=SSSdraw23] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw23]
+execute @e[tag=SSSdraw24] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw24]
+execute @e[tag=SSSdraw25] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw25]
+execute @e[tag=SSSdraw26] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw26]
+execute @e[tag=SSSdraw27] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw27]
+execute @e[tag=SSSdraw28] ~ ~ ~ particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
+kill @e[tag=SSSdraw28]
+#Lines
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~9 ~10 ~11 0 -2 0 0.1 2
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~9 ~10 ~11 0 0 2 0.1 2
+execute @e[tag=particlestand] ~9 ~10 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw2"].Motion:[0.-2.2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw2] {Motion:[0.-2.2]}
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~9 ~10 ~11 -2 0 0 0.1 2
+execute @e[tag=particlestand] ~9 ~10 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw4"].Motion:[-2.-2.0]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw4] {Motion:[-2.-2.0]}
+execute @e[tag=particlestand] ~9 ~10 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw5"].Motion:[-2.0.2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw5] {Motion:[-2.0.2]}
+execute @e[tag=particlestand] ~9 ~10 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw6"].Motion:[-2.-2.2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw6] {Motion:[-2.-2.2]}
+execute @e[tag=particlestand] ~9 ~12 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw7"].Motion:[0.2.2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw7] {Motion:[0.2.2]}
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~9 ~12 ~11 0 0 2 0.1 2
+execute @e[tag=particlestand] ~9 ~12 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw9"].Motion:[-2.2.0]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw9] {Motion:[-2.2.0]}
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~9 ~12 ~11 -2 0 0 0.1 2
+execute @e[tag=particlestand] ~9 ~12 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw11"].Motion:[-2.2.2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw11] {Motion:[-2.2.2]}
+execute @e[tag=particlestand] ~9 ~12 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw12"].Motion:[-2.0.2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw12] {Motion:[-2.0.2]}
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~9 ~10 ~9 0 -2 0 0.1 2
+execute @e[tag=particlestand] ~9 ~10 ~9 summon armor_stand ~ ~ ~ {Tags:["SSSdraw14"].Motion:[-2.0.-2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw14] {Motion:[-2.0.-2]}
+execute @e[tag=particlestand] ~9 ~10 ~9 summon armor_stand ~ ~ ~ {Tags:["SSSdraw15"].Motion:[-2.-2.-2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw15] {Motion:[-2.-2.-2]}
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~9 ~10 ~9 -2 0 0 0.1 2
+execute @e[tag=particlestand] ~9 ~10 ~9 summon armor_stand ~ ~ ~ {Tags:["SSSdraw17"].Motion:[-2.-2.0]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw17] {Motion:[-2.-2.0]}
+execute @e[tag=particlestand] ~9 ~12 ~9 summon armor_stand ~ ~ ~ {Tags:["SSSdraw18"].Motion:[-2.2.-2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw18] {Motion:[-2.2.-2]}
+execute @e[tag=particlestand] ~9 ~12 ~9 summon armor_stand ~ ~ ~ {Tags:["SSSdraw19"].Motion:[-2.0.-2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw19] {Motion:[-2.0.-2]}
+execute @e[tag=particlestand] ~9 ~12 ~9 summon armor_stand ~ ~ ~ {Tags:["SSSdraw20"].Motion:[-2.2.0]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw20] {Motion:[-2.2.0]}
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~9 ~12 ~9 -2 0 0 0.1 2
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~11 ~10 ~11 0 -2 0 0.1 2
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~11 ~10 ~11 0 0 2 0.1 2
+execute @e[tag=particlestand] ~11 ~10 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw24"].Motion:[0.-2.2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw24] {Motion:[0.-2.2]}
+execute @e[tag=particlestand] ~11 ~12 ~11 summon armor_stand ~ ~ ~ {Tags:["SSSdraw25"].Motion:[0.2.2]}
+execute @e[tag=particlestand] ~ ~ ~ entitydata @e[tag=SSSdraw25] {Motion:[0.2.2]}
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~11 ~12 ~11 0 0 2 0.1 2
+execute @e[tag=particlestand] ~ ~ ~ particle cloud ~11 ~10 ~9 0 -2 0 0.1 2

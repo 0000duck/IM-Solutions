@@ -1,0 +1,1 @@
+For Licensing see LICENSE.txt in the root of this Programm
