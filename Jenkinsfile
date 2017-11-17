@@ -1,7 +1,6 @@
 pipeline
 {
 	agent any
-
 	stages {
 		stage ('Checkout')
 		{
@@ -9,11 +8,14 @@ pipeline
 			{
 				checkout scm
 			}
-    }
-    stage ('Nuget')
-    {
-      sh 'nuget restore InterlancedMinds-Solutions.sln'
-    }
+    		}
+    		stage ('Nuget')
+    		{
+			steps
+			{
+      				sh 'nuget restore InterlancedMinds-Solutions.sln'
+    			}
+		}
 		stage ('Build')
 		{
 			steps
