@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Archive') {
       steps {
-        sh 'archive \'Build.zip\''
+        archiveArtifacts(artifacts: 'Build.zip', allowEmptyArchive: true)
       }
     }
     stage('Cleanup') {
