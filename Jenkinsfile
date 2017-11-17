@@ -16,14 +16,23 @@ pipeline {
         sh "xbuild InterlancedMinds-Solutions.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
       }
     }
-    stage('Archive') {
+    stage('Zip it up') {
       steps {
-        archiveArtifacts(artifacts: 'Build.zip', excludes: '*.pdb')
+        sh 'zip Build.zip Build/*'
       }
     }
     stage('Cleanup') {
-      steps {
-        cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true)
+      parallel {
+        stage('Cleanup') {
+          steps {
+            cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true)
+          }
+        }
+        stage('Archive') {
+          steps {
+            sh 'archive \'Build.zip\''
+          }
+        }
       }
     }
   }
