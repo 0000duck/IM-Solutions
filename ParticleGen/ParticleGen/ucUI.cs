@@ -731,7 +731,9 @@ $"#Last Edited: @{TimeZone.CurrentTimeZone.StandardName}, {DateTime.Now.ToLocalT
 		{
 			string buff = "";
 			string n = System.Environment.NewLine;
-			Vector3 position = GetLine(f1, f2, out Vector3 direction, out float length);
+			Vector3 direction;
+			float length;
+			Vector3 position = GetLine(f1, f2, out direction, out length);
 			//particle {particlename} ~posx ~posy ~posz ~dirx ~diry ~dirz speed count
 			buff +=
 				$"execute @e[tag={enttag}] ~ ~ ~ particle {particle} ~{position.X} ~{position.Y} ~{position.Z} {direction.X} {direction.Y} {direction.Z} 0.1 {(int)Positive(countPerBlock * length)}";
