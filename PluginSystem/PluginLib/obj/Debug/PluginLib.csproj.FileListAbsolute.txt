@@ -1,8 +1,0 @@
-C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\PluginLib\obj\Debug\PluginLib.PluginForm.resources
-C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\PluginLib\obj\Debug\PluginLib.ucPluginBase.resources
-C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\PluginLib\obj\Debug\PluginLib.csproj.GenerateResource.Cache
-C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\Build\PluginLib.dll
-C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\Build\PluginLib.pdb
-C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\PluginLib\obj\Debug\PluginLib.csprojResolveAssemblyReference.cache
-C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\PluginLib\obj\Debug\PluginLib.dll
-C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\PluginLib\obj\Debug\PluginLib.pdb
