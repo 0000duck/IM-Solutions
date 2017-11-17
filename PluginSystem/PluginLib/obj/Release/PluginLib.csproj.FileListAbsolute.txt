@@ -1,9 +1,0 @@
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\bin\Release\PluginLib.dll
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\bin\Release\PluginLib.pdb
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\bin\Release\Newtonsoft.Json.dll
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\bin\Release\Newtonsoft.Json.xml
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\obj\Release\PluginLib.PluginForm.resources
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\obj\Release\PluginLib.ucPluginBase.resources
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\obj\Release\PluginLib.csproj.GenerateResource.Cache
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\obj\Release\PluginLib.dll
-C:\Users\HurricanKai\Desktop\CloudRendering_Soruce\PluginLib\obj\Release\PluginLib.pdb

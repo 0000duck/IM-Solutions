@@ -1,2 +1,2 @@
 # InterlancedMinds-Solutions
-All Solutions ive Created for InterancedMinds
+All Solutions i have Created for InterlancedMinds
