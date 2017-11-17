@@ -21,18 +21,14 @@ pipeline {
         sh 'zip Build.zip Build/**'
       }
     }
+    stage('Archive') {
+      steps {
+        sh 'archive \'Build.zip\''
+      }
+    }
     stage('Cleanup') {
-      parallel {
-        stage('Cleanup') {
-          steps {
-            cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true)
-          }
-        }
-        stage('Archive') {
-          steps {
-            sh 'archive \'Build.zip\''
-          }
-        }
+      steps {
+        cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true)
       }
     }
   }
