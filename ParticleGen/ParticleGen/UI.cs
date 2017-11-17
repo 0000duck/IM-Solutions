@@ -585,7 +585,7 @@ $"#Last Edited: @{TimeZone.CurrentTimeZone.StandardName}, {DateTime.Now.ToLocalT
 				{
 					var pos = f.Position;
 					f.Position = Vector3.Zero;
-					f.PointCloud.Translate(double.Parse(xbox.Text), double.Parse(ybox.Text), double.Parse(zbox.Text));
+					f.PointCloud.Translate(float.Parse(xbox.Text), float.Parse(ybox.Text), float.Parse(zbox.Text));
 
 					SizeUntil(f.PointCloud, minsize);
 					f.PointCloud.Scale(f.PointCloud.BoundingBoxMinFloat);
@@ -611,7 +611,7 @@ $"#Last Edited: @{TimeZone.CurrentTimeZone.StandardName}, {DateTime.Now.ToLocalT
 						});
 					progressBar1.PerformStep();
 
-					f.PointCloud.Translate(-1 * double.Parse(xbox.Text), -1 * double.Parse(ybox.Text), -1 * double.Parse(zbox.Text));
+					f.PointCloud.Translate(-1 * float.Parse(xbox.Text), -1 * float.Parse(ybox.Text), -1 * float.Parse(zbox.Text));
 					f.Position = pos;
 				}
 				if (!UseLines)
@@ -659,7 +659,7 @@ $"#Last Edited: @{TimeZone.CurrentTimeZone.StandardName}, {DateTime.Now.ToLocalT
 				{
 					var pos = f.Position;
 					f.Position = Vector3.Zero;
-					f.PointCloud.Translate(double.Parse(xbox.Text), double.Parse(ybox.Text), double.Parse(zbox.Text));
+					f.PointCloud.Translate(float.Parse(xbox.Text), float.Parse(ybox.Text), float.Parse(zbox.Text));
 
 					SizeUntil(f.PointCloud, minsize);
 					f.PointCloud.Scale(f.PointCloud.BoundingBoxMinFloat);
@@ -672,7 +672,7 @@ $"#Last Edited: @{TimeZone.CurrentTimeZone.StandardName}, {DateTime.Now.ToLocalT
 					if (UseLines)
 						ExportLines(f, path, tag);
 
-					f.PointCloud.Translate(-1 * double.Parse(xbox.Text), -1 * double.Parse(ybox.Text), -1 * double.Parse(zbox.Text));
+					f.PointCloud.Translate(-1 * float.Parse(xbox.Text), -1 * float.Parse(ybox.Text), -1 * float.Parse(zbox.Text));
 					f.Position = pos;
 				}
 
@@ -856,7 +856,7 @@ $"#Last Edited: @{TimeZone.CurrentTimeZone.StandardName}, {DateTime.Now.ToLocalT
 
 		private void MoveUp(PointCloud pointCloud, int lowestpoint)
 		{
-			double i = lowestpoint;
+			float i = lowestpoint;
 			foreach (var f in pointCloud.Vectors.Where(f => f.Y < i))
 			{
 				i = f.Y;

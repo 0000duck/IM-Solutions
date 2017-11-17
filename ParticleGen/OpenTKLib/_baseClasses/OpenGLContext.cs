@@ -57,7 +57,7 @@ namespace OpenTKLib
         {
             this.GLContextInitialized = true;
             this.Camera.PerspectiveUpdate(GLControlInstance.Width, GLControlInstance.Height);
-            Camera.SetDirection(new Vector3d(0, 0, -1));
+            Camera.SetDirection(new Vector3(0, 0, -1));
 
             ResetPointLineSizes();
 

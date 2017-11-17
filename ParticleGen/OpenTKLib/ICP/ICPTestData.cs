@@ -87,7 +87,7 @@ namespace ICPLib
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
        
-        public static double Test5_CubeTranslation(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test5_CubeTranslation(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_Corners(cubeSize);
@@ -99,7 +99,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test5_CubeTranslation2(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test5_CubeTranslation2(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_Corners(cubeSize);
@@ -133,7 +133,7 @@ namespace ICPLib
 
             return R;
         }
-        public static double Test5_CubeRotate45(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test5_CubeRotate45(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
 
@@ -146,7 +146,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test5_Cube8RotateShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test5_Cube8RotateShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_Corners(cubeSize);
@@ -161,7 +161,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test5_Cube8Shuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test5_Cube8Shuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_Corners(cubeSize);
@@ -172,7 +172,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test5_Cube8Shuffle_60000(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test5_Cube8Shuffle_60000(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 100);
@@ -183,7 +183,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test5_Cube8Shuffle_1Milion(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test5_Cube8Shuffle_1Milion(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 409);
@@ -194,7 +194,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test5_Cube8TranslateRotateShuffleNew(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test5_Cube8TranslateRotateShuffleNew(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_Corners(cubeSize);
@@ -540,7 +540,7 @@ namespace ICPLib
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
  
-        public static double Test10_Cube8pRotateShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test10_Cube8pRotateShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 1);
@@ -555,7 +555,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test10_Cube8pRotateTranslateShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test10_Cube8pRotateTranslateShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 1);
@@ -572,7 +572,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test10_Cube8pRotateTranslateScaleShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test10_Cube8pRotateTranslateScaleShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 1);
@@ -589,7 +589,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test10_Cube26pRotateTranslateScaleShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test10_Cube26pRotateTranslateScaleShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 2);
@@ -607,7 +607,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test10_Cube26p_RotateShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test10_Cube26p_RotateShuffle(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
 
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 2);
@@ -622,7 +622,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test10_Cube98p_Rotate(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test10_Cube98p_Rotate(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 4);
             //myPCLTarget = Vertices.CreateCube_Corners(10);
@@ -638,7 +638,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test10_Cube26p_Rotate(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test10_Cube26p_Rotate(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 2);
             //myPCLTarget = Vertices.CreateCube_Corners(10);
@@ -654,7 +654,7 @@ namespace ICPLib
             myPCLResult = IterativeClosestPointTransform.Instance.PerformICP(myPCLSource, myPCLTarget);
             return IterativeClosestPointTransform.Instance.MeanDistance;
         }
-        public static double Test10_CubeRTranslate(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, double cubeSize)
+        public static double Test10_CubeRTranslate(ref PointCloudVertices myPCLTarget, ref PointCloudVertices myPCLSource, ref PointCloudVertices myPCLResult, float cubeSize)
         {
             myPCLTarget = PointCloudVertices.CreateCube_RegularGrid_Empty(cubeSize, 5);
             //myPCLTarget = Vertices.CreateCube_Corners(10);

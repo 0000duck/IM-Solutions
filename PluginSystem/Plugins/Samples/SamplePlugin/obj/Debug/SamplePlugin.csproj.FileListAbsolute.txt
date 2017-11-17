@@ -1,0 +1,8 @@
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\Plugins\Samples\SamplePlugin\obj\Debug\SamplePlugin.SampleUC.resources
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\Plugins\Samples\SamplePlugin\obj\Debug\SamplePlugin.csproj.GenerateResource.Cache
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\Build\Plugins\Sample\SamplePlugin.plcfg
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\Build\Plugins\Sample\SamplePlugin.dll
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\Build\Plugins\Sample\SamplePlugin.pdb
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\Plugins\Samples\SamplePlugin\obj\Debug\SamplePlugin.dll
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\Plugins\Samples\SamplePlugin\obj\Debug\SamplePlugin.pdb
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\PluginSystem\Plugins\Samples\SamplePlugin\obj\Debug\SamplePlugin.csprojResolveAssemblyReference.cache

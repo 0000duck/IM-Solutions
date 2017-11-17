@@ -8,7 +8,7 @@ namespace OpenTKLib
 
     public class Axes : RenderableObject
     {
-        double axisLength = 1f ;
+        float axisLength = 1f;
        
         public Axes() : this(1f)
         {
@@ -17,7 +17,7 @@ namespace OpenTKLib
             this.Scale = 1f;
 
         }
-        public Axes(double myaxisLength)
+        public Axes(float myaxisLength)
         {
             axisLength = myaxisLength;
         }
@@ -41,7 +41,7 @@ namespace OpenTKLib
             }
 
         }
-        public double AxesLength
+        public float AxesLength
         {
             get
             {

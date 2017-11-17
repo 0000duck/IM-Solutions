@@ -11,6 +11,8 @@ using System.IO;
 using System.Reflection;
 using OpenTK;
 
+
+
 namespace OpenTKLib
 {
     public static class Example3DModels
@@ -54,12 +56,12 @@ namespace OpenTKLib
             return myModel;
 
         }
-        public static Vector3[] Cuboid(int numberOfPoints, double u, double v)
+        public static Vector3[] Cuboid(int numberOfPoints, float u, float v)
         {
 
             Vector3[] arr = new Vector3[numberOfPoints * 4];
 
-            double v0 = 0f;
+            float v0 = 0f;
             int indexInModel = 0;
             for (int i = 0; i < numberOfPoints; i++)
             {
@@ -89,7 +91,7 @@ namespace OpenTKLib
         /// <param name="Color">Color vector</param>
         /// <param name="Texture">Texture bitmap. Null uses no texture</param>
         /// <returns></returns>
-        public static PointCloud Cuboid(double u, double v, int numberOfPoints, System.Drawing.Color color)
+        public static PointCloud Cuboid(float u, float v, int numberOfPoints, System.Drawing.Color color)
         {
             PointCloud pcl = new PointCloud();
             pcl.Vectors = Example3DModels.Cuboid(numberOfPoints, u, v);
@@ -102,7 +104,7 @@ namespace OpenTKLib
         }
 
 
-        public static List<Vector3> Cube_Corners(double cubeSizeX, double cubeSizeY, double cubeSizeZ)
+        public static List<Vector3> Cube_Corners(float cubeSizeX, float cubeSizeY, float cubeSizeZ)
         {
 
 
@@ -122,11 +124,11 @@ namespace OpenTKLib
             return listVectors;
 
         }
-        public static List<Vector3> CreateCube_RegularGrid_Filled(double cubeSize, int numberOfPointsPerPlane)
+        public static List<Vector3> CreateCube_RegularGrid_Filled(float cubeSize, int numberOfPointsPerPlane)
         {
             List<Vector3> listVectors = new List<Vector3>();
 
-            double startP = cubeSize;
+            float startP = cubeSize;
 
 
             for (int i = 0; i <= numberOfPointsPerPlane; i++)
@@ -145,11 +147,11 @@ namespace OpenTKLib
             }
             return listVectors;
         }
-        public static List<Vector3> CreateCube_RegularGrid_Empty(double cubeSize, int numberOfPointsPerPlane)
+        public static List<Vector3> CreateCube_RegularGrid_Empty(float cubeSize, int numberOfPointsPerPlane)
         {
             List<Vector3> points = new List<Vector3>();
 
-            double startP = cubeSize;
+            float startP = cubeSize;
 
             List<Vector3> pointsList = new List<Vector3>();
 
@@ -194,13 +196,13 @@ namespace OpenTKLib
         /// <param name="Color">Color vector</param>
         /// <param name="Texture">Texture bitmap. Null uses no texture</param>
         /// <returns></returns>
-        public static Model Cuboid_AllLines(string Name, double u, double v, int numberOfPoints, System.Drawing.Color color, System.Drawing.Bitmap Texture)
+        public static Model Cuboid_AllLines(string Name, float u, float v, int numberOfPoints, System.Drawing.Color color, System.Drawing.Bitmap Texture)
         {
 
             PointCloud points = new PointCloud();
 
-            double u0 = 0f;
-            double v0 = 0f;
+            float u0 = 0f;
+            float v0 = 0f;
             List<Vector3> pointsList = new List<Vector3>();
             int indeInModel = -1;
             for (int i = 0; i < numberOfPoints; i++)
@@ -238,11 +240,11 @@ namespace OpenTKLib
         /// <param name="numPoints">Number of points for circular section.</param>
         /// <param name="Color">Color vector.</param>
         /// <param name="Texture">Texture bitmap. Null uses no texture</param>
-        public static PointCloud Tile(double xMax, double yMax, double zMax, int pointsMaxX, int pointsMaxY, int pointsMaxZ)
+        public static PointCloud Tile(float xMax, float yMax, float zMax, int pointsMaxX, int pointsMaxY, int pointsMaxZ)
         {
-            double stepX = xMax / pointsMaxX;
-            double stepY = yMax / pointsMaxY;
-            double stepZ = zMax / pointsMaxZ;
+            float stepX = xMax / pointsMaxX;
+            float stepY = yMax / pointsMaxY;
+            float stepZ = zMax / pointsMaxZ;
 
             PointCloud pCloud = new PointCloud();
             int indexInModel = -1;
@@ -263,18 +265,18 @@ namespace OpenTKLib
             pCloud.Vectors = pointsList.ToArray();
             return pCloud;
         }
-        /// <summary>Generates a 3D Model for a cylinder.</summary>
-        /// <param name="Name">Model name.</param>
-        /// <param name="Radius">Cylinder radius.</param>
-        /// <param name="Height">Cylinder height.</param>
-        /// <param name="numPoints">Number of points for circular section.</param>
-        /// <param name="Color">Color vector.</param>
-        /// <param name="Texture">Texture bitmap. Null uses no texture</param>
-        public static PointCloud TileEmpty(double xMax, double yMax, double zMax, int pointsMaxX, int pointsMaxY, int pointsMaxZ)
+		/// <summary>Generates a 3D Model for a cylinder.</summary>
+		/// <param name="Name">Model name.</param>
+		/// <param name="Radius">Cylinder radius.</param>
+		/// <param name="Height">Cylinder height.</param>
+		/// <param name="numPoints">Number of points for circular section.</param>
+		/// <param name="Color">Color vector.</param>
+		/// <param name="Texture">Texture bitmap. Null uses no texture</param>
+		public static PointCloud TileEmpty(float xMax, float yMax, float zMax, int pointsMaxX, int pointsMaxY, int pointsMaxZ)
         {
-            double stepX = xMax / pointsMaxX;
-            double stepY = yMax / pointsMaxY;
-            double stepZ = zMax / pointsMaxZ;
+            float stepX = xMax / pointsMaxX;
+            float stepY = yMax / pointsMaxY;
+            float stepZ = zMax / pointsMaxZ;
 
             PointCloud pCloud = new PointCloud();
             List<Vector3> pointsList = new List<Vector3>();
@@ -328,10 +330,10 @@ namespace OpenTKLib
         /// <param name="numPoints">Number of points for circular section.</param>
         /// <param name="Color">Color vector.</param>
         /// <param name="Texture">Texture bitmap. Null uses no texture</param>
-        public static PointCloud Rectangle(double xMax, double yMax, int pointsMaxX, int pointsMaxY)
+        public static PointCloud Rectangle(float xMax, float yMax, int pointsMaxX, int pointsMaxY)
         {
-            double stepX = xMax / pointsMaxX;
-            double stepY = yMax / pointsMaxY;
+            float stepX = xMax / pointsMaxX;
+            float stepY = yMax / pointsMaxY;
 
             PointCloud pCloud = new PointCloud();
             List<Vector3> pointsList = new List<Vector3>();

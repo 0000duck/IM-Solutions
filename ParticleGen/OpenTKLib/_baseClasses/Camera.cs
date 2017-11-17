@@ -159,13 +159,13 @@ namespace OpenTKLib
         /// Modifies the orientation of the camera to get the camera to look in a particular direction.
         /// </summary>
         /// <param name="direction">The direction to have the camera look.</param>
-        public void SetDirection(Vector3d direction)
+        public void SetDirection(Vector3 direction)
         {
-            if (direction == Vector3d.Zero) return;
+            if (direction == Vector3.Zero) return;
 
-            Vector3d zvec = -direction.NormalizeV();
-            Vector3d xvec = zvec.Up().CrossProduct(zvec).NormalizeV();
-            Vector3d yvec = zvec.CrossProduct(xvec).NormalizeV();
+            Vector3 zvec = -direction.NormalizeV();
+            Vector3 xvec = zvec.Up().CrossProduct(zvec).NormalizeV();
+            Vector3 yvec = zvec.CrossProduct(xvec).NormalizeV();
             CenterOfInterest = QuaternionNew.FromAxis(xvec, yvec, zvec);
         }
 

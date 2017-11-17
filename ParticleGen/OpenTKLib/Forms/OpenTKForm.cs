@@ -25,8 +25,8 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using OpenTKLib;
-using System.Windows.Media.Media3D;
 using OpenTK;
+
 
 namespace OpenTKLib
 {

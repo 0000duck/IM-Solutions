@@ -96,14 +96,14 @@ namespace OpenTKLib
             }
 
         }
-        public float NormSquaredMax
+        public double NormSquaredMax
         {
             get
             {
-               float normMax = float.MinValue;
+               double normMax = double.MinValue;
                for(int i = 0; i < this.Vectors.Length; i++)
                {
-                   float n = this.Vectors[i].NormSquared();
+                   double n = this.Vectors[i].NormSquared();
                    if (n > normMax)
                        normMax = n;
                }
@@ -119,7 +119,7 @@ namespace OpenTKLib
             {
                 if (!centroidAndBoundingBoxCalculated)
                     CalculateCentroidBoundingBox();
-                float f = float.MinValue;
+				float f = float.MinValue;
                 for (int i = 0; i < 2; i++)
                 {
                     f = System.Math.Max(f, System.Math.Abs(this.boundingBoxMin[i]));
@@ -685,7 +685,7 @@ namespace OpenTKLib
             Rotate(R);
 
         }
-        public void Translate(double x, double y, double z)
+		public void Translate(float x, float y, float z)
         {
             Vector3 translation = new Vector3(x, y, z);
             for (int i = 0; i < this.Vectors.Length; i++)
@@ -818,9 +818,9 @@ namespace OpenTKLib
                 // if (i < NumberOfVertices / 2) radius /= 2;
                 double theta = Convert.ToSingle(2 * Math.PI * r.NextDouble());
                 double azimuth = Convert.ToSingle(Math.PI * r.NextDouble());
-                double x = Convert.ToSingle(radius * Math.Cos(theta) * Math.Sin(azimuth));
-                double y = Convert.ToSingle(radius * Math.Sin(theta) * Math.Sin(azimuth));
-                double z = Convert.ToSingle(radius * Math.Cos(azimuth));
+                float x = Convert.ToSingle(radius * Math.Cos(theta) * Math.Sin(azimuth));
+                float y = Convert.ToSingle(radius * Math.Sin(theta) * Math.Sin(azimuth));
+                float z = Convert.ToSingle(radius * Math.Cos(azimuth));
                 Vector3 vi = new Vector3(x, y, z);
                 points.Add(vi);
             }
@@ -829,7 +829,7 @@ namespace OpenTKLib
             return pointCloud;
 
         }
-        public static PointCloud CreateCube_RandomPointsOnPlanes(double cubeSize, int numberOfRandomPoints)
+        public static PointCloud CreateCube_RandomPointsOnPlanes(float cubeSize, int numberOfRandomPoints)
         {
             
             List<Vector3> points = Example3DModels.Cube_Corners(cubeSize, cubeSize, cubeSize);

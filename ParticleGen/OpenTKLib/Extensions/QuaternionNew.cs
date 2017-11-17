@@ -358,7 +358,7 @@ namespace OpenTKLib
             if (Axis.LengthSquared == 0.0f)
                 return Identity;
 
-            Vector4 v = new Vector4(Axis.Normalize() * (float)Math.Sin(Angle * 0.5f), (float)Math.Cos(Angle * 0.5f));
+            Vector4 v = new Vector4(Axis.Normalized() * (float)Math.Sin(Angle * 0.5f), (float)Math.Cos(Angle * 0.5f));
             return new QuaternionNew(v);
         }
 
@@ -406,7 +406,7 @@ namespace OpenTKLib
         /// Creates an orientation QuaternionNew given the 3 axis.
         /// </summary>
         /// <param name="Axis">An array of 3 axis</param>
-        public static QuaternionNew FromAxis(Vector3d xvec, Vector3d yvec, Vector3d zvec)
+        public static QuaternionNew FromAxis(Vector3 xvec, Vector3 yvec, Vector3 zvec)
         {
             Matrix4 Rotation = new Matrix4(
                 new Vector4(xvec.X, yvec.X, zvec.X, 0),

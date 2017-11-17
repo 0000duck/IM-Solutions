@@ -208,7 +208,7 @@ namespace OpenTKLib
 
             
             double fOutValue = 0f;
-            double r, g, b;
+            float r, g, b;
             
             if (strArrayRead.Length > 7)
             {
@@ -221,9 +221,9 @@ namespace OpenTKLib
             {
                 //we have vertex AND color infos
                 //double colorR = 
-                double.TryParse(strArrayRead[4], NumberStyles.Float | NumberStyles.AllowThousands, GlobalVariables.CurrentCulture, out r);
-                double.TryParse(strArrayRead[5], NumberStyles.Float | NumberStyles.AllowThousands, GlobalVariables.CurrentCulture, out g);
-                double.TryParse(strArrayRead[6], NumberStyles.Float | NumberStyles.AllowThousands, GlobalVariables.CurrentCulture, out b);
+                float.TryParse(strArrayRead[4], NumberStyles.Float | NumberStyles.AllowThousands, GlobalVariables.CurrentCulture, out r);
+                float.TryParse(strArrayRead[5], NumberStyles.Float | NumberStyles.AllowThousands, GlobalVariables.CurrentCulture, out g);
+                float.TryParse(strArrayRead[6], NumberStyles.Float | NumberStyles.AllowThousands, GlobalVariables.CurrentCulture, out b);
                 color = new Vector3(r, g, b);
                 
             }

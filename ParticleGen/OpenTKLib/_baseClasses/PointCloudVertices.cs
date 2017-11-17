@@ -26,10 +26,8 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 using OpenTK;
-using System.Windows.Media.Media3D;
-using System.Windows.Media;
 using OpenTKLib.FastGLControl;
-
+using Point3D = OpenTK.Vector3d;
 
 
 namespace OpenTKLib
@@ -622,33 +620,33 @@ namespace OpenTKLib
 
         }
 
-        public static PointCloudVertices CreateCuboid_Corners(double cubeSizeX, double cubeSizeY, double cubeSizeZ)
+        public static PointCloudVertices CreateCuboid_Corners(float cubeSizeX, float cubeSizeY, float cubeSizeZ)
         {
             List<Vector3> listVectors = Example3DModels.Cube_Corners(cubeSizeX, cubeSizeY, cubeSizeZ);
             return FromVector3List(listVectors);
                      
         }
-        public static PointCloudVertices CreateCube_Corners(double cubeSizeX)
+        public static PointCloudVertices CreateCube_Corners(float cubeSizeX)
         {
             List<Vector3> listVectors = Example3DModels.Cube_Corners(cubeSizeX, cubeSizeX, cubeSizeX);
             return FromVector3List(listVectors);
 
         }
-        public static PointCloudVertices CreateCube_RegularGrid_Filled(double cubeSize, int numberOfPointsPerPlane)
+        public static PointCloudVertices CreateCube_RegularGrid_Filled(float cubeSize, int numberOfPointsPerPlane)
         {
             List<Vector3> listVectors = Example3DModels.CreateCube_RegularGrid_Filled(cubeSize, numberOfPointsPerPlane);
             return FromVector3List(listVectors);
 
 
         }
-        public static PointCloudVertices CreateCube_RegularGrid_Empty(double cubeSize, int numberOfPointsPerPlane)
+        public static PointCloudVertices CreateCube_RegularGrid_Empty(float cubeSize, int numberOfPointsPerPlane)
         {
             List<Vector3> listVectors = Example3DModels.CreateCube_RegularGrid_Empty(cubeSize, numberOfPointsPerPlane);
             return FromVector3List(listVectors);
             
 
         }
-        public static PointCloudVertices CreateCube_RegularGrid_StartAt0_Filled(double cubeSize, int numberOfPointsPerPlane)
+        public static PointCloudVertices CreateCube_RegularGrid_StartAt0_Filled(float cubeSize, int numberOfPointsPerPlane)
         {
             PointCloudVertices points = new PointCloudVertices();
 
@@ -674,7 +672,7 @@ namespace OpenTKLib
 
         }
 
-        public static PointCloudVertices CreateCube_RegularGrid_StartAt0_Empty(double cubeSize, int numberOfPointsPerPlane)
+        public static PointCloudVertices CreateCube_RegularGrid_StartAt0_Empty(float cubeSize, int numberOfPointsPerPlane)
         {
             PointCloudVertices points = new PointCloudVertices();
 
@@ -715,7 +713,7 @@ namespace OpenTKLib
 
         }
    
-        public static PointCloudVertices CreateCube_RandomPoints(double cubeSize, int numberOfRandomPoints)
+        public static PointCloudVertices CreateCube_RandomPoints(float cubeSize, int numberOfRandomPoints)
         {
             PointCloudVertices points = new PointCloudVertices();
             var r = new Random();

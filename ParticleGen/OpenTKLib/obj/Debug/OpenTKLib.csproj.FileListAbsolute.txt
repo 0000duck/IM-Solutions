@@ -1,0 +1,13 @@
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.AboutForm.resources
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.SettingsForm.resources
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.MultipleOGLControls.resources
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.OpenTKForm.resources
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.FastGLControl.OpenTKFormAlternative.resources
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.Properties.Resources.resources
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.OpenGLUC.resources
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.csproj.GenerateResource.Cache
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\Build\OpenTKLib.dll.config
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\Build\OpenTKLib.dll
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\Build\OpenTKLib.pdb
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.dll
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\ParticleGen\OpenTKLib\obj\Debug\OpenTKLib.pdb

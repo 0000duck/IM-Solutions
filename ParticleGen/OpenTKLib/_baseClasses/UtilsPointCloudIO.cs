@@ -4,9 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Specialized;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Media.Media3D;
 using System.Windows;
 using OpenTK;
 
@@ -15,8 +12,10 @@ namespace OpenTKLib
 {
     public class UtilsPointCloudIO
     {
-        public static int BYTES_PER_PIXEL = (PixelFormats.Bgr32.BitsPerPixel + 7) / 8;
-        public static System.Globalization.CultureInfo CultureInfo = new System.Globalization.CultureInfo("en-US");
+		//TODO: Fix BYTES_PER_PIXEL
+		public static int BYTES_PER_PIXEL = 32;
+		//public static int BYTES_PER_PIXEL = (PixelFormats.Bgr32.BitsPerPixel + 7) / 8;
+		public static System.Globalization.CultureInfo CultureInfo = new System.Globalization.CultureInfo("en-US");
 
         /// <summary>
         /// reads the OBJ file ONLY with the special format used also in the write_OBJ method
