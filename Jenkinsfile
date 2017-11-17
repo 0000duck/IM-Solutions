@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Zip it up') {
       steps {
-        sh 'zip Build.zip Build'
+        sh 'zip -r Build.zip Build'
       }
     }
     stage('Archive') {
