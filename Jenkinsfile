@@ -17,13 +17,31 @@ pipeline {
       }
     }
     stage('Archive') {
-      steps {
-        archive 'Build/**'
+      parallel {
+        stage('Archive') {
+          steps {
+            archive 'Build/**'
+          }
+        }
+        stage('Zipping It All Up') {
+          steps {
+            sh 'zip -r ${env.BUILD_NUMBER}.zip Build'
+          }
+        }
       }
     }
     stage('Cleanup') {
-      steps {
-        cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true)
+      parallel {
+        stage('Cleanup') {
+          steps {
+            cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true)
+          }
+        }
+        stage('Archive Zip') {
+          steps {
+            sh 'archive \'${env.BUILD_NUMBER}.zip\''
+          }
+        }
       }
     }
   }
