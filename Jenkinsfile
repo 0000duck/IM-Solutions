@@ -3,7 +3,7 @@ pipeline
 
 	agent any
 	
-	node {
+	stages {
 		stage 'Checkout'
 			checkout scm
 
