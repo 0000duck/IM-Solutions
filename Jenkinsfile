@@ -4,15 +4,18 @@ pipeline
 	agent any
 	
 	stages {
-		stage 'Checkout'
+		stage ('Checkout')
+		{
 			checkout scm
-
-		stage 'Build'
+		}
+		stage ('Build')
+		{
 			sh 'nuget restore InterlancedMinds-Solutions.sln'
 			sh "\"${tool 'MSBuild'}\" InterlancedMinds-Solutions.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
-
-		stage 'Archive'
+		}
+		stage ('Archive')
+		{
 			archive 'Build/**'
-
+		}
 	}
 }
