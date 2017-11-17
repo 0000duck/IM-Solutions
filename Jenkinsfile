@@ -12,5 +12,10 @@ pipeline {
         archive 'Build/**'
       }
     }
+    stage('Cleanup') {
+      steps {
+        cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true)
+      }
+    }
   }
 }
