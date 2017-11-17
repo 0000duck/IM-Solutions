@@ -22,7 +22,8 @@ namespace PluginLib
 		{
 			if (PluginManager.LoadedPlugins.Contains(plugin))
 			{
-				if (PluginManager.Configs.TryGetValue(plugin, out PluginConfig pc))
+				PluginConfig pc;
+				if (PluginManager.Configs.TryGetValue(plugin, out pc))
 				{
 					return PluginPath + pc.Plugin.Path + refpath;
 				}
