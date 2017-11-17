@@ -105,10 +105,11 @@ namespace OpenTKLib
             return myColorF;
 
         }
+		//This Function is not currently used, but is wip
         public static List<double[]> ToColorInfo(byte[] arrayColor, ushort[] arrayDepth, int width, int height)
         {
-
-            int BYTES_PER_PIXEL = (System.Windows.Media.PixelFormats.Bgr32.BitsPerPixel + 7) / 8;
+			//This was removed because of Mono
+            //int BYTES_PER_PIXEL = (System.Windows.Media.PixelFormats.Bgr32.BitsPerPixel + 7) / 8;
 
             List<double[]> listOfColors = new List<double[]>();
             for (int x = 0; x < width; ++x)
@@ -116,8 +117,10 @@ namespace OpenTKLib
                 for (int y = 0; y < height; ++y)
                 {
                     int depthIndex = (y * width) + x;
-                    int colorIndex = depthIndex * BYTES_PER_PIXEL;
-                    ushort z = arrayDepth[depthIndex];
+					//TODO: fix up BYTES_PER_PIXEL
+					//int colorIndex = depthIndex * BYTES_PER_PIXEL;
+					int colorIndex = depthIndex * 32; //This is not true!
+					ushort z = arrayDepth[depthIndex];
                     if (z > 0)
                     {
                         double[] color = new double[4] { 0, 0, 0, 0 };
@@ -136,10 +139,10 @@ namespace OpenTKLib
         }
         public static List<System.Drawing.Color> ToColorList(int numberOfItems, byte r, byte g, byte b, byte a)
         {
+			//This was removed because of Mono
+			//int BYTES_PER_PIXEL = (System.Windows.Media.PixelFormats.Bgr32.BitsPerPixel + 7) / 8;
 
-            int BYTES_PER_PIXEL = (System.Windows.Media.PixelFormats.Bgr32.BitsPerPixel + 7) / 8;
-
-            List<System.Drawing.Color> listOfColors = new List<System.Drawing.Color>();
+			List<System.Drawing.Color> listOfColors = new List<System.Drawing.Color>();
             System.Drawing.Color color = System.Drawing.Color.FromArgb(a, r, g, b);
 
 
@@ -152,10 +155,10 @@ namespace OpenTKLib
         }
         public static Vector3[] ToVector3Array(int numberOfItems, byte r, byte g, byte b)
         {
+			//This was removed because of Mono
+			//int BYTES_PER_PIXEL = (System.Windows.Media.PixelFormats.Bgr32.BitsPerPixel + 7) / 8;
 
-            int BYTES_PER_PIXEL = (System.Windows.Media.PixelFormats.Bgr32.BitsPerPixel + 7) / 8;
-
-            Vector3[] listOfColors = new Vector3[numberOfItems];
+			Vector3[] listOfColors = new Vector3[numberOfItems];
 
             Vector3 v = new Vector3(r, g, b);
 
