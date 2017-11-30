@@ -1,0 +1,7 @@
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\BedrockBehaviourGenerator\obj\Release\BedrockBehaviourGenerator.csprojResolveAssemblyReference.cache
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\BedrockBehaviourGenerator\bin\Release\BedrockBehaviourGenerator.dll
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\BedrockBehaviourGenerator\bin\Release\BedrockBehaviourGenerator.pdb
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\BedrockBehaviourGenerator\bin\Release\Newtonsoft.Json.dll
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\BedrockBehaviourGenerator\bin\Release\Newtonsoft.Json.xml
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\BedrockBehaviourGenerator\obj\Release\BedrockBehaviourGenerator.dll
+C:\Users\HurricanKai\Source\Repos\InterlancedMinds-Solutions\BedrockBehaviourGenerator\obj\Release\BedrockBehaviourGenerator.pdb
